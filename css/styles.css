@@ -1,0 +1,224 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilos de la barra superior */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    padding: 1em;
+    color: whi;
+}
+
+.header-top .logo img {
+    max-width: 100px;
+}
+
+.header-top .search-bar input {
+    padding: 0.5em;
+    width: 300px;
+}
+
+.header-top .user-options a {
+    color: white;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+/* Estilos de la barra de navegación */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    max-width: 70%; /* Ajuste del ancho del carrusel */
+    margin: 2em auto; /* Centrando el carrusel y agregando margen */
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px; /* Bordes redondeados opcionales en imágenes */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Estilos de bienvenida */
+.welcome {
+    text-align: center;
+    padding: 2em;
+    background-color: #fff;
+    margin-top: 1em;
+}
+
+/* Estilos del catálogo */
+.catalogo {
+    text-align: center;
+}
+
+.catalogo h2 {
+    margin-bottom: 1em;
+    color: black;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.producto h3 {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+.producto p {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+
+/* Estilos de los formularios de login y registro */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alineación al inicio, no al centro */
+    padding-top: 20px; /* Reducir espacio entre menú y formularios */
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: none;
+    padding: 20px;
+}
+
+.form {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    padding: 8px; /* Ajustar padding para hacer las cajas más pequeñas */
+    margin-bottom: 10px; /* Ajustar margen inferior */
+    border: none;
+    border-radius: 5px;
+    width: 90%; /* Reducir el ancho de las cajas de texto */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+.btn {
+    padding: 10px;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #ff416c;
+}
+
+
+
+
+
+

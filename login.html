@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro - Tienda de Muebles</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Cuenta</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="seguimiento.html">Seguimiento</a></li>
+                <li><a href="login.html">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="form-container">
+            
+            <form id="loginForm" class="form" action="login.php" method="POST">
+                <h2>Sign In</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+            <form id="registerForm" class="form">
+                <h2>Register</h2>
+                <label for="reg_username">Username:</label>
+                <input type="text" id="reg_username" name="reg_username" required>
+                
+                <label for="reg_password">Password:</label>
+                <input type="password" id="reg_password" name="reg_password" required>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+        <!-- Div para mostrar los datos del usuario -->
+        <div id="userData" style="display:none;">
+            <h2>Datos de Usuario</h2>
+            <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+            <p><strong>Nombre:</strong> <span id="displayNombre"></span></p>
+            <p><strong>Fecha de Nacimiento:</strong> <span id="displayFechaNacimiento"></span></p>
+            <p><strong>Domicilio:</strong> <span id="displayDomicilio"></span></p>
+        </div>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
